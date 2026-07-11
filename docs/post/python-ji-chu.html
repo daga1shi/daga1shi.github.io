@@ -11,18 +11,27 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="## print
+
+### print主要内容
+
 ```python
 print('test')
 ```
+
 >[!TIP]
 >输入代码时用英文输入法
 >''双引号不能丢，其内部内容表示字符串
+
 ### 其他
-**换行**  \n
+
+#### 换行  \n
+
 ```python
 print('te\nst')
 ```
-**三引号** '''或''' (内部内容直接换行,显示结果也为换行)
+
+#### 三引号 '''或''' (内部内容直接换行,显示结果也为换行)
+
 ```python
 print('''随
 便
@@ -31,33 +40,100 @@ print('''随
 什
 么''')
 ```
-**单双引号转义** \
+
+#### 单双引号转义 \
+
 ```python
 print('如果想打\'这种字符串类型的引号就在前面加反斜杠')
 ```
-**字符串连接**
+
+#### 字符串连接
+
 ```python
 print('这个'+'可以让'+'内容连接在一起')
 ```
+
++也可以连接变量和字符串
+
 ## 变量
+
 ### 赋值
+
 ```python
 a='我喜欢你'
-```。">
+```
+
+### 变量命名规则
+
+#### 只能由文字、数字、下划线组成
+
+#### 不能以数字开头
+
+#### 下划线命名法，即用下划线代替空格
+
+#### 变量名不要占用python的关键字
+
+## 计算
+
+### 基本符号
+
+加+  减-  乘*  除/  乘方** 括号()  【按运算优先级由小到大排列】
+
+> [!TIP]
+>
+> 除号用的是正斜杠，即右shift左侧的
+
+### 导入math
+
+```python
+import math
+math.sin(1)
+```
+
+如上，即导入math后，用**math.<u>函数名</u>（……）**，即可完成复杂函数的运算
+
+在**pythonmath库官方文档**里查看所有可用的函数
+
+### 整数与浮点数
+
+数字主要分为两种：整数、浮点数
+
+浮点数，即小数
+
+在python中，使用除法会输出浮点数（eg:2/1的结果为2.0而非2）
+
+此外，print里不能把数字和字符串混用
+
+如需混用，需要在数字前加str()
+
+```python
+print('一天吃'+str(8)+'顿'）
+```
+
+当然这种情况还是比较适合把8直接放在 ’    ‘ 里，但是如果要输出数字变量的话很可能会忘记这件事。">
 <meta property="og:title" content="python基础">
 <meta property="og:description" content="## print
+
+### print主要内容
+
 ```python
 print('test')
 ```
+
 >[!TIP]
 >输入代码时用英文输入法
 >''双引号不能丢，其内部内容表示字符串
+
 ### 其他
-**换行**  \n
+
+#### 换行  \n
+
 ```python
 print('te\nst')
 ```
-**三引号** '''或''' (内部内容直接换行,显示结果也为换行)
+
+#### 三引号 '''或''' (内部内容直接换行,显示结果也为换行)
+
 ```python
 print('''随
 便
@@ -66,19 +142,77 @@ print('''随
 什
 么''')
 ```
-**单双引号转义** \
+
+#### 单双引号转义 \
+
 ```python
 print('如果想打\'这种字符串类型的引号就在前面加反斜杠')
 ```
-**字符串连接**
+
+#### 字符串连接
+
 ```python
 print('这个'+'可以让'+'内容连接在一起')
 ```
+
++也可以连接变量和字符串
+
 ## 变量
+
 ### 赋值
+
 ```python
 a='我喜欢你'
-```。">
+```
+
+### 变量命名规则
+
+#### 只能由文字、数字、下划线组成
+
+#### 不能以数字开头
+
+#### 下划线命名法，即用下划线代替空格
+
+#### 变量名不要占用python的关键字
+
+## 计算
+
+### 基本符号
+
+加+  减-  乘*  除/  乘方** 括号()  【按运算优先级由小到大排列】
+
+> [!TIP]
+>
+> 除号用的是正斜杠，即右shift左侧的
+
+### 导入math
+
+```python
+import math
+math.sin(1)
+```
+
+如上，即导入math后，用**math.<u>函数名</u>（……）**，即可完成复杂函数的运算
+
+在**pythonmath库官方文档**里查看所有可用的函数
+
+### 整数与浮点数
+
+数字主要分为两种：整数、浮点数
+
+浮点数，即小数
+
+在python中，使用除法会输出浮点数（eg:2/1的结果为2.0而非2）
+
+此外，print里不能把数字和字符串混用
+
+如需混用，需要在数字前加str()
+
+```python
+print('一天吃'+str(8)+'顿'）
+```
+
+当然这种情况还是比较适合把8直接放在 ’    ‘ 里，但是如果要输出数字变量的话很可能会忘记这件事。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://daga1shi.github.io/post/python-ji-chu.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/301690197?v=4&size=64">
@@ -150,27 +284,53 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>print</h2>
+<h3>print主要内容</h3>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">"test"</span>)</pre></div>
 <div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg data-component="Octicon" class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>输入代码时用英文输入法<br>
 ""双引号不能丢，其内部内容表示字符串</p>
 </div>
 <h3>其他</h3>
-<p><strong>换行</strong>  \n</p>
+<h4>换行  \n</h4>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">"te<span class="pl-cce">\n</span>st"</span>)</pre></div>
-<p><strong>三引号</strong> '''或""" (内部内容直接换行,显示结果也为换行)</p>
+<h4>三引号 '''或""" (内部内容直接换行,显示结果也为换行)</h4>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">'''随</span>
 <span class="pl-s">便</span>
 <span class="pl-s">写</span>
 <span class="pl-s">点</span>
 <span class="pl-s">什</span>
 <span class="pl-s">么'''</span>)</pre></div>
-<p><strong>单双引号转义</strong> \</p>
+<h4>单双引号转义 \</h4>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">"如果想打<span class="pl-cce">\"</span>这种字符串类型的引号就在前面加反斜杠"</span>)</pre></div>
-<p><strong>字符串连接</strong></p>
+<h4>字符串连接</h4>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-en">print</span>(<span class="pl-s">"这个"</span><span class="pl-c1">+</span><span class="pl-s">"可以让"</span><span class="pl-c1">+</span><span class="pl-s">"内容连接在一起"</span>)</pre></div>
+<p>+也可以连接变量和字符串</p>
 <h2>变量</h2>
 <h3>赋值</h3>
-<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span><span class="pl-c1">=</span><span class="pl-s">"我喜欢你"</span></pre></div></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span><span class="pl-c1">=</span><span class="pl-s">"我喜欢你"</span></pre></div>
+<h3>变量命名规则</h3>
+<h4>只能由文字、数字、下划线组成</h4>
+<h4>不能以数字开头</h4>
+<h4>下划线命名法，即用下划线代替空格</h4>
+<h4>变量名不要占用python的关键字</h4>
+<h2>计算</h2>
+<h3>基本符号</h3>
+<p>加+  减-  乘*  除/  乘方** 括号()  【按运算优先级由小到大排列】</p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg data-component="Octicon" class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p>除号用的是正斜杠，即右shift左侧的</p>
+</div>
+<h3>导入math</h3>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">math</span>
+<span class="pl-s1">math</span>.<span class="pl-c1">sin</span>(<span class="pl-c1">1</span>)</pre></div>
+<p>如上，即导入math后，用<strong>math.函数名（……）</strong>，即可完成复杂函数的运算</p>
+<p>在<strong>pythonmath库官方文档</strong>里查看所有可用的函数</p>
+<h3>整数与浮点数</h3>
+<p>数字主要分为两种：整数、浮点数</p>
+<p>浮点数，即小数</p>
+<p>在python中，使用除法会输出浮点数（eg:2/1的结果为2.0而非2）</p>
+<p>此外，print里不能把数字和字符串混用</p>
+<p>如需混用，需要在数字前加str()</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">print</span>(<span class="pl-s">'一天吃'</span><span class="pl-c1">+</span><span class="pl-en">str</span>(<span class="pl-c1">8</span>)<span class="pl-c1">+</span><span class="pl-s">'顿'</span>）</pre></div>
+<p>当然这种情况还是比较适合把8直接放在 ’    ‘ 里，但是如果要输出数字变量的话很可能会忘记这件事</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
